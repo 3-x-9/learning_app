@@ -42,7 +42,7 @@ try:
     NOTES_SYSTEM_PROMPT=load_prompt_file("notes_prompt.md")
     QUIZ_TASK_PROMPT=load_prompt_file("quiz_task_prompt.md")
     NOTES_TASK_PROMPT=load_prompt_file("notes_task_prompt.md")
-    JSON_SCHEMA = '{"quiz_title": "...", "questions": [{"question": "...", "options": [{"text": "...", "is_correct": true/false}], "explanation": "..."}]}'
+    JSON_SCHEMA = '{"note_title": "...", "questions": [{"question": "...", "options": ["text": "..."], correct_answer": "..."}]}'
 
 except RuntimeError as e:
     print(f"Fatal Error Prompt loading Failed: {e}")
